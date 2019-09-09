@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject
+  Version="1"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  MasterStylesheetOverride="True"
+  xml:lang="en-us"
+  SourceControlBound="false"
+  Comment="This template contains several starter topics and other files intended for both online and print-based output. The online HTML5 output looks like a modern website with navigation on the side (left or right). It offers a frameless, modern alternative to the more traditional tripane format. Responsive output is automatically enabled, which means the content display changes automatically depending on the width of the screen. The PDF output is a user guide that includes auto-generation of a TOC, glossary, and index."
+  MasterToc="/Project/TOCs/Online.fltoc"
+  IncludePattern="*.css"
+  AutoExcludeNonTaggedFiles="false"
+  IncludeLinkedFiles="false"
+  DeleteStale="false"
+  DeleteUnreferenced="false"
+  AutoSync="true"
+  LastImport="2019-09-04T09:31:35.2441433-05:00"
+  ExcludePattern="Standard.css">
+  <Files>
+    <Url
+      Source="file:///C:/Users/klullo/Documents/My Projects/NewProject/NewProject.flprj"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/NewProject.flprj" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../NewProject/Content/A_Introduction Topics/GettingStarted.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/A_Introduction Topics/GettingStarted.htm" />
+    <Url
+      Source="../../../NewProject/Content/A_Introduction Topics/MoreInformation.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/A_Introduction Topics/MoreInformation.htm" />
+    <Url
+      Source="../../../NewProject/Content/A_Introduction Topics/WhatsNew.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/A_Introduction Topics/WhatsNew.htm" />
+    <Url
+      Source="../../../NewProject/Content/B_Feature Topics/Feature1.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/B_Feature Topics/Feature1.htm" />
+    <Url
+      Source="../../../NewProject/Content/B_Feature Topics/Feature2.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/B_Feature Topics/Feature2.htm" />
+    <Url
+      Source="../../../NewProject/Content/B_Feature Topics/Feature3.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/B_Feature Topics/Feature3.htm" />
+    <Url
+      Source="../../../NewProject/Content/B_Feature Topics/Features.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/B_Feature Topics/Features.htm" />
+    <Url
+      Source="../../../NewProject/Content/C_Procedure Topics/Procedure1.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/C_Procedure Topics/Procedure1.htm" />
+    <Url
+      Source="../../../NewProject/Content/C_Procedure Topics/Procedure2.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/C_Procedure Topics/Procedure2.htm" />
+    <Url
+      Source="../../../NewProject/Content/C_Procedure Topics/Procedure3.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/C_Procedure Topics/Procedure3.htm" />
+    <Url
+      Source="../../../NewProject/Content/C_Procedure Topics/Procedures.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/C_Procedure Topics/Procedures.htm" />
+    <Url
+      Source="../../../NewProject/Content/Resources/TableStylesheets/Standard.css"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/Resources/TableStylesheets/Standard.css" />
+    <Url
+      Source="../../../NewProject/Content/Resources/Stylesheets/Styles.css"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/Resources/Stylesheets/Styles.css" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles>
+    <Url
+      Source="../../../NewProject/Content/Home.htm"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/Home.htm" />
+    <Url
+      Source="../../../NewProject/Content/Resources/Stylesheets/Styles.css"
+      AbsoluteSource="file:///C:/Users/klullo/Documents/My Projects/NewProject/Content/Resources/Stylesheets/Styles.css" />
+  </SkippedSourceFiles>
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/A_Introduction Topics/GettingStarted.htm"
+      TimeStamp="11/26/2018 8:41:17 AM" />
+    <Url
+      Source="../../Content/A_Introduction Topics/MoreInformation.htm"
+      TimeStamp="11/30/2018 6:25:28 AM" />
+    <Url
+      Source="../../Content/A_Introduction Topics/WhatsNew.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/B_Feature Topics/Feature1.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/B_Feature Topics/Feature2.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/B_Feature Topics/Feature3.htm"
+      TimeStamp="11/30/2018 6:25:37 AM" />
+    <Url
+      Source="../../Content/B_Feature Topics/Features.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/C_Procedure Topics/Procedure1.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/C_Procedure Topics/Procedure2.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/C_Procedure Topics/Procedure3.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/C_Procedure Topics/Procedures.htm"
+      TimeStamp="10/24/2018 11:28:18 AM" />
+    <Url
+      Source="../../Content/Resources/TableStylesheets/Standard.css"
+      TimeStamp="11/15/2018 11:19:25 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Styles.css"
+      TimeStamp="11/21/2018 12:27:09 PM" />
+  </GeneratedFiles>
+</CatapultProject>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTargetOutput
+  GeneratedTarget="/Output/klullo/PDF_NEW/PDF_NEW.pdf"
+  BuildVersion="15.0.7081.30245">
+  <Files>
+    <Url
+      Source="Output/klullo/Temporary/PDF_NEW/PDF_NEW_48CA89CA/Resources/Images/Plus.png" />
+    <Url
+      Source="Output/klullo/PDF_NEW/PDF_NEW.pdf" />
+    <Url
+      Source="Output/klullo/Temporary/PDF_NEW/PDF_NEW_48CA89CA/Resources/Images/Logo.eps" />
+    <Url
+      Source="Output/klullo/Temporary/PDF_NEW/PDF_NEW_48CA89CA/Resources/Images/Backmatter-Heading-Background.png" />
+    <Url
+      Source="Output/klullo/Temporary/PDF_NEW/PDF_NEW_48CA89CA/Resources/Images/Hero-Background.jpg" />
+    <Url
+      Source="Output/klullo/Temporary/PDF_NEW/PDF_NEW_48CA89CA/Resources/Images/Minus.png" />
+  </Files>
+  <Skins />
+</CatapultTargetOutput>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="NEW" Link="Home.htm" ResolvedId="1000" />
+    <Map Name="NEW1" Link="A-Introduction-Topics/Getting-Started.htm" ResolvedId="1001" />
+    <Map Name="NEW2" Link="A-Introduction-Topics/More-Information.htm" ResolvedId="1002" />
+    <Map Name="NEW3" Link="A-Introduction-Topics/Whats-New.htm" ResolvedId="1003" />
+    <Map Name="NEW4" Link="B-Feature-Topics/Feature1.htm" ResolvedId="1004" />
+    <Map Name="NEW5" Link="B-Feature-Topics/Feature2.htm" ResolvedId="1005" />
+    <Map Name="NEW6" Link="B-Feature-Topics/Feature3.htm" ResolvedId="1006" />
+    <Map Name="NEW7" Link="B-Feature-Topics/Features.htm" ResolvedId="1007" />
+    <Map Name="NEW8" Link="C-Procedure-Topics/Procedure1.htm" ResolvedId="1008" />
+    <Map Name="NEW9" Link="C-Procedure-Topics/Procedure2.htm" ResolvedId="1009" />
+    <Map Name="NEW10" Link="C-Procedure-Topics/Procedure3.htm" ResolvedId="1010" />
+    <Map Name="NEW11" Link="C-Procedure-Topics/Procedures.htm" ResolvedId="1011" />
+    <Map Name="NEW12" Link="D-Reference/Company.htm" ResolvedId="1012" />
+    <Map Name="NEW13" Link="D-Reference/FAQs.htm" ResolvedId="1013" />
+    <Map Name="NEW14" Link="D-Reference/Tips.htm" ResolvedId="1014" />
+</CatapultAliasFile>

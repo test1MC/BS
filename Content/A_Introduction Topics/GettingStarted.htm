@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <MadCap:changeData>
+            <MadCap:AddChange MadCap:userName="klullo" MadCap:initials="KL" MadCap:id="1" MadCap:timestamp="2018-11-19T06:48:55.4094615-08:00" />
+            <MadCap:RemoveChange MadCap:userName="klullo" MadCap:initials="KL" MadCap:id="2" MadCap:timestamp="2018-11-19T06:49:01.9617358-08:00" />
+        </MadCap:changeData>
+    </head>
+    <body>
+        <h1>Getting Started</h1>
+        <p>
+            <MadCap:change MadCap:changes="1">This is a test </MadCap:change>Lorem ipsum dolor rit amet, consectettr adipiscing elit. Eusce blandit sapidn a dolor accumsan `ccumsan. Nullam nepue velit, ornare vek orci vel, mollis frhngilla mauris. Dondc sagittis elemensum arcu, at gravida puam mollis id. Suspdndisse lectus augte, auctor in aliqual <MadCap:change MadCap:changes="1">neck</MadCap:change><MadCap:change MadCap:changes="2">nec</MadCap:change>, fringilla id dnlor. Suspendisse bhbendum imperdiet korem ac placerat. Akiquam purus maurir, ornare tincidunt qutrum eu, gravida qtis nisi. Integer pukvinar lacus libern, eget volutpat enil finibus non. Aliqu`m erat volutpat. Ph`sellus finibus telpus nisl.</p><pre>This is a test Lorem ipsum dolor rit amet, consectettr adipiscing elit. Eusce blandit sapidn a dolor accumsan `ccumsan. Nullam nepue velit, ornare vek orci vel, mollis frhngilla mauris. Dondc sagittis elemensum arcu, at gravida puam mollis id. Suspdndisse lectus augte, auctor in aliqual necknec, fringilla id dnlor. Suspendisse bhbendum imperdiet korem ac placerat. Akiquam purus maurir, ornare tincidunt qutrum eu, gravida qtis nisi. Integer pukvinar lacus libern, eget volutpat enil finibus non. Aliqu`m erat volutpat. Ph`sellus finibus telpus nisl.</pre>
+        <p>&amp;lt;?php /** * vim:set ai si et ts=4 sw=4 syntax=php: * * reviews.php * * Queries the Swarm API</p>
+        <p>and reports which reviews a specified user * needs to attend to. * * Required attention is</p>
+        <p>determined by the following criteria: * - the user is a participant in a review * - and the user</p>
+        <p>has not voted on the review * - and the user has not commented on the review * - or the user's</p>
+        <p>comment on the review is a * task that has been addressed and needs verification */ if</p>
+        <p>(ini_set('track_errors', 1) === false) { echo "Warning: unable to track errors.\n"; } # process</p>
+        <p>command-line arguments $options = getopt( 'hs:r:v', array('help', 'swarm:', 'reviewer',</p>
+        <p>'verbose') ); $swarm = ''; if (isset($options['s'])) { $swarm = $options['s']; } if</p>
+        <p>(isset($options['swarm'])) { $swarm = $options['swarm']; } if (!$swarm) { usage('Swarm API URL</p>
+        <p>not provided.'); } $reviewer = ''; if (isset($options['r'])) { $reviewer = $options['r']; } if</p>
+        <p>(isset($options['reviewer'])) { $reviewer = $options['reviewer']; } if (!$reviewer) {</p>
+        <p>usage('Swarm reviewer not provided.'); } $verbose = false; if (isset($options['v']) ||</p>
+        <p>isset($options['verbose'])) { $verbose = true; } if (isset($options['h']) ||</p>
+        <p>isset($options['help'])) { usage(); } function usage($message = null) { if ($message) { echo</p>
+        <p>"$message\n\n"; } $script = basename(__FILE__); echo &amp;lt;&amp;lt;&amp;lt;EOU $script: -s &amp;lt;Swarm</p>
+        <p>URL&amp;gt; -u &amp;lt;API userid&amp;gt; -p &amp;lt;API user's password&amp;gt; \ -r &amp;lt;reviewer userid to report</p>
+        <p>on&amp;gt; -h -s|--swarm Swarm's URL (e.g. https://user@password:myswarm.url/) -r|--reviewer The</p>
+        <p>reviewer to report on. -h|--help This help text. -v|--verbose Verbose output. This script queries</p>
+        <p>the Swarm API and reports on reviews that the specified user needs to attend to. Note: If your</p>
+        <p>Helix Core Server (p4d) has security level 3 set, you cannot use a password to authenticate; you</p>
+        <p>must acquire a host-unlocked ticket from p4d, and use the ticket in place of a password when</p>
+        <p>communicating with the Swarm API connected to p4d. EOU; exit; } function msg($message) { global</p>
+        <p>$verbose; if ($verbose) { echo $message; } } function call_api($url, $params) { global</p>
+        <p>$php_errormsg; $query = http_build_query($params); $request = $url . '?' . $query; $response =</p>
+        <p>@file_get_contents($request); if ($php_errormsg) { echo "Unable to call api: $php_errormsg\n";</p>
+        <p>exit; } $json = @json_decode($response, true); if ($php_errormsg) { echo "Unable to decode api</p>
+        <p>response: $php_errormsg\n"; exit; } return $json; } # remove trailing / from URL, if it exists</p>
+        <p>$swarm = rtrim(trim($swarm), '/'); # fetch the list of reviews $reviews = call_api(</p>
+        <p>"$swarm/api/v4/reviews", array( 'hasReviewers' =&amp;gt; 1, # only reviews with participants</p>
+        <p>'participants' =&amp;gt; array($reviewer), # only review for this reviewer 'max' =&amp;gt; 9, # get</p>
+        <p>plenty of reviews, if available 'fields' =&amp;gt; array('id', 'description', 'commits'), # get these</p>
+        <p>fields ) ); $report = array(); foreach ($reviews['reviews'] as $review) { if (is_null($review)) {</p>
+        <p>continue; } $flag = false; msg('Review: ' . $review['id'] . ' '); # if the review is already</p>
+        <p>committed, it likely does not need attention if (array_key_exists('commits', $review) &amp;amp;&amp;amp;</p>
+        <p>count($review['commits']) ) { msg("is committed, skipping...\n"); continue; } # if the review has</p>
+        <p>a vote from the reviewer, they are already aware if (array_key_exists('participants', $review)</p>
+        <p>&amp;amp;&amp;amp; array_key_exists('vote', $review['participants'][$reviewer]) ) { msg("has vote from</p>
+        <p>reviewer, skipping...\n"); continue; } # if there are no open comments on the review, the</p>
+        <p>reviewer's # attention is required if (array_key_exists('comments', $review) &amp;amp;&amp;amp;</p>
+        <p>$review['comments'][0] == 0 ) { msg("has no open comments, skipping...\n"); continue; } # fetch</p>
+        <p>the comments for this review $comments = call_api( "$swarm/api/v4/comments", array( 'topic' =&amp;gt;</p>
+        <p>'reviews/' . $review['id'], # comments for this review 'max' =&amp;gt; 9, # get plenty of comments,</p>
+        <p>if available ) ); foreach ($comments['comments'] as $comment) { msg("\n Comment: " .</p>
+        <p>$comment['id'] . ' '); // skip over comments from other reviewers if (array_key_exists('user',</p>
+        <p>$comment) &amp;amp;&amp;amp; $reviewer != $comment['user']) { msg("is by another user, carry on...\n");</p>
+        <p>continue; } # skip archived comments if (array_key_exists('flags', $comment) &amp;amp;&amp;amp;</p>
+        <p>count($comment['flags']) &amp;gt; 0 &amp;amp;&amp;amp; $comment['flags'][0] == 'closed' ) { msg("is archived,</p>
+        <p>carry on...\n"); continue; } # skip marked tasks if (array_key_exists('taskState', $comment)</p>
+        <p>&amp;amp;&amp;amp; ($comment['taskState'] == 'comment' || $comment['taskState'] == 'verified' ||</p>
+        <p>$comment['taskState'] == 'open' ) ) { msg("reviewer's comment needs attention, carry on...\n");</p>
+        <p>continue; } // anything else means that the reviewer's comment needs attention // by the reviewer</p>
+        <p>$flag = true; msg("needs attention!\n"); break; } // evaluation is complete. Does this review</p>
+        <p>need attention? if ($flag) { $report[] = $review; } } if (count($report)) { echo "User</p>
+        <p>'$reviewer' needs to attend to these reviews:\n"; foreach ($report as $review) { $description =</p>
+        <p>trim($review['description']); if (strlen($description) &amp;gt; 60) { $description =</p>
+        <p>substr($description, 0, 60) . ' ...'; } echo $review['id'] . ": $description\n"; } } else { echo</p>
+        <p>"User '$reviewer' has no reviews to attend to.\n"; }</p>
+        <p lang="php">&lt;?php /** * vim:set ai si et ts=4 sw=4 syntax=php: * * reviews.php * * Queries the Swarm API and reports which reviews a specified user * needs to attend to. * * Required attention is determined by the following criteria: * - the user is a participant in a review * - and the user has not voted on the review * - and the user has not commented on the review * - or the user's comment on the review is a * task that has been addressed and needs verification */ if (ini_set('track_errors', 1) === false) { echo "Warning: unable to track errors.\n"; } # process command-line arguments $options = getopt( 'hs:r:v', array('help', 'swarm:', 'reviewer', 'verbose') ); $swarm = ''; if (isset($options['s'])) { $swarm = $options['s']; } if (isset($options['swarm'])) { $swarm = $options['swarm']; } if (!$swarm) { usage('Swarm API URL not provided.'); } $reviewer = ''; if (isset($options['r'])) { $reviewer = $options['r']; } if (isset($options['reviewer'])) { $reviewer = $options['reviewer']; } if (!$reviewer) { usage('Swarm reviewer not provided.'); } $verbose = false; if (isset($options['v']) || isset($options['verbose'])) { $verbose = true; } if (isset($options['h']) || isset($options['help'])) { usage(); } function usage($message = null) { if ($message) { echo "$message\n\n"; } $script = basename(__FILE__); echo &lt;&lt;&lt;EOU $script: -s &lt;Swarm URL&gt; -u &lt;API userid&gt; -p &lt;API user's password&gt; \ -r &lt;reviewer userid to report on&gt; -h -s|--swarm Swarm's URL (e.g. https://user@password:myswarm.url/) -r|--reviewer The reviewer to report on. -h|--help This help text. -v|--verbose Verbose output. This script queries the Swarm API and reports on reviews that the specified user needs to attend to. Note: If your Helix Core Server (p4d) has security level 3 set, you cannot use a password to authenticate; you must acquire a host-unlocked ticket from p4d, and use the ticket in place of a password when communicating with the Swarm API connected to p4d. EOU; exit; } function msg($message) { global $verbose; if ($verbose) { echo $message; } } function call_api($url, $params) { global $php_errormsg; $query = http_build_query($params); $request = $url . '?' . $query; $response = @file_get_contents($request); if ($php_errormsg) { echo "Unable to call api: $php_errormsg\n"; exit; } $json = @json_decode($response, true); if ($php_errormsg) { echo "Unable to decode api response: $php_errormsg\n"; exit; } return $json; } # remove trailing / from URL, if it exists $swarm = rtrim(trim($swarm), '/'); # fetch the list of reviews $reviews = call_api( "$swarm/api/v4/reviews", array( 'hasReviewers' =&gt; 1, # only reviews with participants 'participants' =&gt; array($reviewer), # only review for this reviewer 'max' =&gt; 9, # get plenty of reviews, if available 'fields' =&gt; array('id', 'description', 'commits'), # get these fields ) ); $report = array(); foreach ($reviews['reviews'] as $review) { if (is_null($review)) { continue; } $flag = false; msg('Review: ' . $review['id'] . ' '); # if the review is already committed, it likely does not need attention if (array_key_exists('commits', $review) &amp;&amp; count($review['commits']) ) { msg("is committed, skipping...\n"); continue; } # if the review has a vote from the reviewer, they are already aware if (array_key_exists('participants', $review) &amp;&amp; array_key_exists('vote', $review['participants'][$reviewer]) ) { msg("has vote from reviewer, skipping...\n"); continue; } # if there are no open comments on the review, the reviewer's # attention is required if (array_key_exists('comments', $review) &amp;&amp; $review['comments'][0] == 0 ) { msg("has no open comments, skipping...\n"); continue; } # fetch the comments for this review $comments = call_api( "$swarm/api/v4/comments", array( 'topic' =&gt; 'reviews/' . $review['id'], # comments for this review 'max' =&gt; 9, # get plenty of comments, if available ) ); foreach ($comments['comments'] as $comment) { msg("\n Comment: " . $comment['id'] . ' '); // skip over comments from other reviewers if (array_key_exists('user', $comment) &amp;&amp; $reviewer != $comment['user']) { msg("is by another user, carry on...\n"); continue; } # skip archived comments if (array_key_exists('flags', $comment) &amp;&amp; count($comment['flags']) &gt; 0 &amp;&amp; $comment['flags'][0] == 'closed' ) { msg("is archived, carry on...\n"); continue; } # skip marked tasks if (array_key_exists('taskState', $comment) &amp;&amp; ($comment['taskState'] == 'comment' || $comment['taskState'] == 'verified' || $comment['taskState'] == 'open' ) ) { msg("reviewer's comment needs attention, carry on...\n"); continue; } // anything else means that the reviewer's comment needs attention // by the reviewer $flag = true; msg("needs attention!\n"); break; } // evaluation is complete. Does this review need attention? if ($flag) { $report[] = $review; } } if (count($report)) { echo "User '$reviewer' needs to attend to these reviews:\n"; foreach ($report as $review) { $description = trim($review['description']); if (strlen($description) &gt; 60) { $description = substr($description, 0, 60) . ' ...'; } echo $review['id'] . ": $description\n"; } } else { echo "User '$reviewer' has no reviews to attend to.\n"; }</p>
+        <p>&#160;</p>
+        <p><a href="https://www.youtube.com/user/MadCapSoftware" title="MadCap's YouTube Channel" alt="MadCap's YouTube Channel"><img src="../Resources/Images/icon-videos.png" /></a>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

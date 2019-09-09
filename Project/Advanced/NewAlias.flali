@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="NEW" Link="/Content/Home.htm" />
+    <Map Name="NEW1" Link="/Content/A-Introduction-Topics/Getting-Started.htm" />
+    <Map Name="NEW2" Link="/Content/A-Introduction-Topics/More-Information.htm" />
+    <Map Name="NEW3" Link="/Content/A-Introduction-Topics/Whats-New.htm" />
+    <Map Name="NEW4" Link="/Content/B-Feature-Topics/Feature1.htm" />
+    <Map Name="NEW5" Link="/Content/B-Feature-Topics/Feature2.htm" />
+    <Map Name="NEW6" Link="/Content/B-Feature-Topics/Feature3.htm" />
+    <Map Name="NEW7" Link="/Content/B-Feature-Topics/Features.htm" />
+    <Map Name="NEW8" Link="/Content/C-Procedure-Topics/Procedure1.htm" />
+    <Map Name="NEW9" Link="/Content/C-Procedure-Topics/Procedure2.htm" />
+    <Map Name="NEW10" Link="/Content/C-Procedure-Topics/Procedure3.htm" />
+    <Map Name="NEW11" Link="/Content/C-Procedure-Topics/Procedures.htm" />
+    <Map Name="NEW12" Link="/Content/D-Reference/Company.htm" />
+    <Map Name="NEW13" Link="/Content/D-Reference/FAQs.htm" />
+    <Map Name="NEW14" Link="/Content/D-Reference/Tips.htm" />
+    <Map Name="NEW15" Link="/Content/E-Frontmatter-Topics/Title.htm" />
+</CatapultAliasFile>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlobalImportedFilesCache
+  SavedSource="file:///C:/Users/klullo/Documents/My Projects/NewTest/Output/klullo/Temporary/GlobalImportedFilesSet v.1.xml">
+  <ImportedMap>
+    <Map
+      Local="Content/A_Introduction Topics/GettingStarted.htm"
+      Remote="../NewProject/Content/A_Introduction Topics/GettingStarted.htm" />
+    <Map
+      Local="Content/A_Introduction Topics/MoreInformation.htm"
+      Remote="../NewProject/Content/A_Introduction Topics/MoreInformation.htm" />
+    <Map
+      Local="Content/A_Introduction Topics/WhatsNew.htm"
+      Remote="../NewProject/Content/A_Introduction Topics/WhatsNew.htm" />
+    <Map
+      Local="Content/B_Feature Topics/Feature1.htm"
+      Remote="../NewProject/Content/B_Feature Topics/Feature1.htm" />
+    <Map
+      Local="Content/B_Feature Topics/Feature2.htm"
+      Remote="../NewProject/Content/B_Feature Topics/Feature2.htm" />
+    <Map
+      Local="Content/B_Feature Topics/Feature3.htm"
+      Remote="../NewProject/Content/B_Feature Topics/Feature3.htm" />
+    <Map
+      Local="Content/B_Feature Topics/Features.htm"
+      Remote="../NewProject/Content/B_Feature Topics/Features.htm" />
+    <Map
+      Local="Content/C_Procedure Topics/Procedure1.htm"
+      Remote="../NewProject/Content/C_Procedure Topics/Procedure1.htm" />
+    <Map
+      Local="Content/C_Procedure Topics/Procedure2.htm"
+      Remote="../NewProject/Content/C_Procedure Topics/Procedure2.htm" />
+    <Map
+      Local="Content/C_Procedure Topics/Procedure3.htm"
+      Remote="../NewProject/Content/C_Procedure Topics/Procedure3.htm" />
+    <Map
+      Local="Content/C_Procedure Topics/Procedures.htm"
+      Remote="../NewProject/Content/C_Procedure Topics/Procedures.htm" />
+    <Map
+      Local="Content/Resources/TableStylesheets/Standard.css"
+      Remote="../NewProject/Content/Resources/TableStylesheets/Standard.css" />
+    <Map
+      Local="Content/Resources/Stylesheets/Styles.css"
+      Remote="../NewProject/Content/Resources/Stylesheets/Styles.css" />
+  </ImportedMap>
+  <SourceUrls>
+    <Url
+      Source="Project/Imports/NewProject.flimpfl" />
+  </SourceUrls>
+</CatapultGlobalImportedFilesCache>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlobalConceptSet
+  SavedSource="file:///C:/Users/klullo/Documents/My Projects/NewTest/Output/klullo/Temporary/GlobalConceptSet v.6.catapultconceptset">
+  <Concepts />
+  <SourceUrls>
+    <Url
+      Source="Home.htm" />
+    <Url
+      Source="Template Instructions.pdf" />
+    <Url
+      Source="A-Introduction-Topics/Getting-Started.htm" />
+    <Url
+      Source="A-Introduction-Topics/More-Information.htm" />
+    <Url
+      Source="A-Introduction-Topics/Whats-New.htm" />
+    <Url
+      Source="B-Feature-Topics/Feature1.htm" />
+    <Url
+      Source="B-Feature-Topics/Feature2.htm" />
+    <Url
+      Source="B-Feature-Topics/Feature3.htm" />
+    <Url
+      Source="B-Feature-Topics/Features.htm" />
+    <Url
+      Source="C-Procedure-Topics/Procedure1.htm" />
+    <Url
+      Source="C-Procedure-Topics/Procedure2.htm" />
+    <Url
+      Source="C-Procedure-Topics/Procedure3.htm" />
+    <Url
+      Source="C-Procedure-Topics/Procedures.htm" />
+    <Url
+      Source="D-Reference/Company.htm" />
+    <Url
+      Source="D-Reference/FAQs.htm" />
+    <Url
+      Source="D-Reference/Tips.htm" />
+    <Url
+      Source="E-Frontmatter-Topics/Title.htm" />
+    <Url
+      Source="Resources/Images/Backmatter-Heading-Background.png" />
+    <Url
+      Source="Resources/Images/Hero-Background.jpg" />
+    <Url
+      Source="Resources/Images/Icon-Checkbox.png" />
+    <Url
+      Source="Resources/Images/Icon-Download.png" />
+    <Url
+      Source="Resources/Images/Icon-Forum.png" />
+    <Url
+      Source="Resources/Images/Icon-Gears.png" />
+    <Url
+      Source="Resources/Images/Icon-PDFs.png" />
+    <Url
+      Source="Resources/Images/Icon-Popular-Topics.png" />
+    <Url
+      Source="Resources/Images/Icon-Videos.png" />
+    <Url
+      Source="Resources/Images/Image-Cover.png" />
+    <Url
+      Source="Resources/Images/Logo.eps" />
+    <Url
+      Source="Resources/Images/Logo.png" />
+    <Url
+      Source="Resources/Images/Minus.png" />
+    <Url
+      Source="Resources/Images/Plus.png" />
+    <Url
+      Source="Resources/MasterPages/Home-Page.flmsp" />
+    <Url
+      Source="Resources/MasterPages/Other-Topics.flmsp" />
+    <Url
+      Source="Resources/PageLayouts/Chapters.flpgl" />
+    <Url
+      Source="Resources/PageLayouts/Frontmatter.flpgl" />
+    <Url
+      Source="Resources/Stylesheets/Styles.css" />
+    <Url
+      Source="Resources/TableStylesheets/Alternate-Row-Color.css" />
+  </SourceUrls>
+  <UsedUrls />
+  <UsedConceptControlUrls />
+</CatapultGlobalConceptSet>
